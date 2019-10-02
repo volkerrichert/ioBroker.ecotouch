@@ -83,6 +83,7 @@ const TAGS = {
         name: 'temperature_outside',
         type: 'number',
         tagName: 'A1',
+        divisor: 10
     },
 
     // German: Außentemperatur gemittelt über 1h
@@ -90,6 +91,7 @@ const TAGS = {
         name: 'temperature_outside_1h',
         type: 'number',
         tagName: 'A2',
+        divisor: 10
     },
 
     // German: Außentemperatur gemittelt über 24h
@@ -97,6 +99,7 @@ const TAGS = {
         name: 'temperature_outside_24h',
         type: 'number',
         tagName: 'A3',
+        divisor: 10
     },
 
     // German: Quelleneintrittstemperatur
@@ -104,6 +107,7 @@ const TAGS = {
         name: 'temperature_source_in',
         type: 'number',
         tagName: 'A4',
+        divisor: 10
     },
 
     // German: Quellenaustrittstemperatur
@@ -111,6 +115,7 @@ const TAGS = {
         name: 'temperature_source_out',
         type: 'number',
         tagName: 'A5',
+        divisor: 10
     },
 
     // German: Verdampfungstemperatur
@@ -118,6 +123,7 @@ const TAGS = {
         name: 'temperature_evaporation',
         type: 'number',
         tagName: 'A6',
+        divisor: 10
     },
 
     // German: Sauggastemperatur
@@ -125,6 +131,7 @@ const TAGS = {
         name: 'temperature_suction',
         type: 'number',
         tagName: 'A7',
+        divisor: 10
     },
 
     // German: Verdampfungsdruck
@@ -139,6 +146,7 @@ const TAGS = {
         name: 'temperature_return_set',
         type: 'number',
         tagName: 'A10',
+        divisor: 10
     },
 
     // German: Temperatur Rücklauf
@@ -146,6 +154,7 @@ const TAGS = {
         name: 'temperature_return',
         type: 'number',
         tagName: 'A11',
+        divisor: 10
     },
 
     // German: Temperatur Vorlauf
@@ -153,6 +162,7 @@ const TAGS = {
         name: 'temperature_flow',
         type: 'number',
         tagName: 'A12',
+        divisor: 10
     },
 
     // German: Kondensationstemperatur
@@ -160,6 +170,7 @@ const TAGS = {
         name: 'temperature_condensation',
         type: 'number',
         tagName: 'A14',
+        divisor: 10
     },
 
     // German: Kondensationsdruck
@@ -174,6 +185,7 @@ const TAGS = {
         name: 'temperature_storage',
         type: 'number',
         tagName: 'A16',
+        divisor: 10
     },
 
     // German: Raumtemperatur
@@ -181,6 +193,7 @@ const TAGS = {
         name: 'temperature_room',
         type: 'number',
         tagName: 'A17',
+        divisor: 10
     },
 
     // German: Raumtemperatur gemittelt über 1h
@@ -188,6 +201,7 @@ const TAGS = {
         name: 'temperature_room_1h',
         type: 'number',
         tagName: 'A18',
+        divisor: 10
     },
 
     // German: Warmwassertemperatur
@@ -195,6 +209,7 @@ const TAGS = {
         name: 'temperature_water',
         type: 'number',
         tagName: 'A19',
+        divisor: 10
     },
 
     // German: Pooltemperatur
@@ -202,6 +217,7 @@ const TAGS = {
         name: 'temperature_pool',
         type: 'number',
         tagName: 'A20',
+        divisor: 10
     },
 
     // German: Solarkollektortemperatur
@@ -209,6 +225,7 @@ const TAGS = {
         name: 'temperature_solar',
         type: 'number',
         tagName: 'A21',
+        divisor: 10
     },
 
     // German: Solarkreis Vorlauf
@@ -216,6 +233,7 @@ const TAGS = {
         name: 'temperature_solar_flow',
         type: 'number',
         tagName: 'A22',
+        divisor: 10
     },
 
     // German: Ventilöffnung elektrisches Expansionsventil
@@ -265,6 +283,7 @@ const TAGS = {
         name: 'temperature_heating_return',
         type: 'number',
         tagName: 'A30',
+        divisor: 10
     },
 
     // German: Geforderte Temperatur im Heizbetrieb
@@ -272,6 +291,7 @@ const TAGS = {
         name: 'temperature_heating_set',
         type: 'number',
         tagName: 'A31',
+        divisor: 10
     },
 
     // German: Sollwertvorgabe Heizkreistemperatur
@@ -279,6 +299,7 @@ const TAGS = {
         name: 'temperature_heating_set2',
         type: 'number',
         tagName: 'A32',
+        divisor: 10
     },
 
     // German: Aktuelle Kühlkreistemperatur
@@ -286,6 +307,7 @@ const TAGS = {
         name: 'temperature_cooling_return',
         type: 'number',
         tagName: 'A33',
+        divisor: 10
     },
 
     // German: Geforderte Temperatur im Kühlbetrieb
@@ -293,6 +315,7 @@ const TAGS = {
         name: 'temperature_cooling_set',
         type: 'number',
         tagName: 'A34',
+        divisor: 10
     },
 
     // German: Sollwertvorgabe Kühlbetrieb
@@ -300,6 +323,7 @@ const TAGS = {
         name: 'temperature_cooling_set2',
         type: 'number',
         tagName: 'A35',
+        divisor: 10
     },
 
     // German: Sollwert Warmwassertemperatur
@@ -307,6 +331,7 @@ const TAGS = {
         name: 'temperature_water_set',
         type: 'number',
         tagName: 'A37',
+        divisor: 10
     },
 
     // German: Sollwertvorgabe Warmwassertemperatur
@@ -314,6 +339,7 @@ const TAGS = {
         name: 'temperature_water_set2',
         type: 'number',
         tagName: 'A38',
+        divisor: 10
     },
 
     // German: Sollwert Poolwassertemperatur
@@ -321,6 +347,7 @@ const TAGS = {
         name: 'temperature_pool_set',
         type: 'number',
         tagName: 'A40',
+        divisor: 10
     },
 
     // German: Sollwertvorgabe Poolwassertemperatur
@@ -328,6 +355,7 @@ const TAGS = {
         name: 'temperature_pool_set2',
         type: 'number',
         tagName: 'A41',
+        divisor: 10
     },
 
     // German: geforderte Verdichterleistung
@@ -370,6 +398,7 @@ const TAGS = {
         name: 'temperature2_outside_1h',
         type: 'number',
         tagName: 'A90',
+        divisor: 10
     },
 
     // German: Heizkurve - nviNormAussen
@@ -433,6 +462,7 @@ const TAGS = {
         name: 'tempchange_heating_pv',
         type: 'number',
         tagName: 'A682',
+        divisor: 10
     },
 
     // German: Temperaturveränderung Kühlkreis bei PV-Ertrag
@@ -440,6 +470,7 @@ const TAGS = {
         name: 'tempchange_cooling_pv',
         type: 'number',
         tagName: 'A683',
+        divisor: 10
     },
 
     // German: Temperaturveränderung Warmwasser bei PV-Ertrag
@@ -447,6 +478,7 @@ const TAGS = {
         name: 'tempchange_warmwater_pv',
         type: 'number',
         tagName: 'A684',
+        divisor: 10
     },
 
     // German: Temperaturveränderung Pool bei PV-Ertrag
@@ -454,6 +486,7 @@ const TAGS = {
         name: 'tempchange_pool_pv',
         type: 'number',
         tagName: 'A685',
+        divisor: 10
     },
 
     // German: undokumentiert: Firmware-Version Regler
